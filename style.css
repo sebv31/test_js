@@ -1,0 +1,100 @@
+/*
+	style.css
+	---------
+
+	par Sébastien V.
+*/
+
+* {
+	color: SteelBlue;
+	font-family: "Arial Narrow";
+	font-style: normal;
+}
+
+input:focus {
+     outline: none;							/* supprime le contour sur le focus */
+}
+
+span {
+	font-variant: small-caps;
+	border-top: 1px dotted;
+	border-bottom: 1px dotted;
+}
+
+span a {
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
+em {
+	border-bottom : 1px dotted;
+	padding: 1px;
+	font-style: italic;
+}
+
+ul.menu {
+	display: table;
+	margin: 0 auto;
+}
+
+ul.menu li {
+	display: table-cell;
+	padding: 15px;
+}
+
+#pageheader {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+
+#pagefooter {
+	width: 50%;
+	margin: 0 auto 0 auto;
+	border-top: 2px solid;
+}
+
+#body {
+	text-align: left;
+	width: 50%;
+	margin: auto;
+}
+
+.info-error {
+	height: 25; 							/* hauteur du parent */					
+  	line-height: 25px; 						/* hauteur de ligne (identique) */
+  	white-space: nowrap; 					/* interdiction d'aller a la ligne */	
+	
+	color: Crimson; 
+	font-variant: small-caps;
+	border : 1px dotted;
+	padding-left: 6px;
+}
+
+.info-success {
+	height: 25; 							/* hauteur du parent */
+  	line-height: 25px; 						/* hauteur de ligne (identique) */
+  	white-space: nowrap; 					/* interdiction d'aller a la ligne */	
+	
+	color: Green; 
+	font-variant: small-caps;
+	border : 1px dotted;
+	padding-left: 6px;
+}
+
+.field-error {
+	color: Crimson;
+	background-color: LavenderBlush;
+	border: 2px solid Crimson;				/* width type color */
+	border-radius: 8px;
+	padding: 4px 7px 4px 7px; 				/* top right bottom left */
+}
+
+.field-casual {
+	color: SteelBlue;
+	background-color: LightSteelBlue;
+	border: 2px solid SteelBlue;			/* width type color */
+	border-radius: 8px;
+	padding: 4px 7px 4px 7px; 				/* top right bottom left */	
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<title>test-fdj</title>
+    	<style type="text/css"></style>
+    	<link rel="stylesheet" href="style.css"></link>
+	</head>
+
+	<body>
+
+		<div id="pageheader">
+			<img src="ressources/img/hasard_header_logo_13878-14347.jpg" alt="le super logo fdj..." title="c'est beau quand même !!!">
+			<h1>Page de test</h1>
+			<p>Vous pourrez jouer ici a toute l'offre <a  id="testlink" href="https://www.fdj.fr" title="c'est génial !!!" target="_blank">FDJ</a> et accéder directement à vos jeux favoris</p>
+			<div id="zoneinfo"></div>
+		</div>
+
+		<div id="body">
+			<div id="input">
+				<h2>Choix de vos jeux :</h2>
+				<p>Saisissez ici vos jeux favoris, puis cliquez sur le <em>bouton</em>.</p>
+				<input id="zoneinput" class="field-casual"></input>
+				<input type="button" onclick="addTabContent('zoneresult', 'zoneinput', 'zoneinfo')" value="Ajouter un jeu ..."></input>
+		    </div>
+		    
+		    <div id="result">
+		    	<h2>Vos jeux favoris :</h2>
+		    	<p>Voici la liste de vos jeux favoris, classés par gamme - <em>oui enfin ca ce sera pour plus tard !!</em>.</p>
+		    	<div id="zoneresult"></div>
+		    </div>
+	    </div>
+
+	    <div id="pagefooter">
+			<ul class="menu">
+				<li><span><a href="pages/testsite_number2text.html" title="Convertir un nombre en lettres ...">Number2Text</a></span></li>
+				<li><span>util 2</span></li>
+				<li><span>util 3</span></li>
+				<li><span>util 4</span></li>
+			</ul>
+	    </div>
+
+		<script type="text/javascript" src="ressources/js/utils.js"></script>
+
+		<script>
+
+			// affiche le contenu du tableau de résultats
+			showTabContent('zoneresult');
+			
+			// queslques essais divers
+			//test_change_link("testlink", "https://www.pmu.fr", "PMU");
+			//test_show_html('input');
+			//test_parcourir_dom('div');
+			//document.getElementById('result').innerHTML = 'Hé Hé Hé baisé ...';
+
+		</script>
+
+	</body>
+</html>
+
+
